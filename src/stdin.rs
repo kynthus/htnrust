@@ -3,15 +3,6 @@ use std::io::{BufRead, stderr, stdin, stdout, Write};
 use std::str::FromStr;
 
 /// 標準入力ストリームから値を読み込みます。
-///
-/// # Examples
-///
-/// ```
-/// // You can have rust code between fences inside the comments
-/// // If you pass --test to `rustdoc`, it will even test it for you!
-/// use scantool::stdin::scan;
-/// let n: i32 = scan();
-/// ```
 pub fn scan<T: FromStr>() -> T
     where T::Err: Debug {
     let stdout: Option<_> = stdout()
