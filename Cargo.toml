@@ -3,5 +3,8 @@ name = "scantool"
 version = "0.1.0"
 edition = "2015"
 authors = ["Kynthus Auoeau"]
+description = "Test Rust library"
+license = "MIT"
 
 [dependencies]
+rand = "0.8.4"
